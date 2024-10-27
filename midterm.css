@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(https://fonts.google.com/);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    scroll-behavior: smooth;
+  
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(255, 209, 4);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#081113,#ecec2e);
+}
+
+.body{ 
+    background-image: url(Beige\ Green\ Vintage\ Watercolor\ Creative\ Portfolio\ Presentation\ \(1\).png);
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+/*Navigatio bar*/
+.header{
+    background: #081113;
+    position:fixed;
+    top: 0; 
+    width: 100%;
+    padding:  20px 10%;
+    display:flex;
+    justify-content:  space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    opacity: 0.6;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  
+}
+
+.logo{
+    color: rgb(228, 224, 26);
+    font-size: 25px;
+    font-family: "Arial",sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.navbar a{
+    color:rgb(236, 240, 46);
+    font-style: normal;
+    font-size: 20px;
+    font-family: "Arial",sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;   
+}
+.navbar a:hover{
+    box-shadow: 0 10px 14px rgb(255, 255, 255);
+    transform: scale(1.24)
+}
+/*paragraph content*/
+#Profile_content{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+/*paragraph part*/
+.profile_pargraph{
+    max-width: 900px;
+    padding: 0 8%;
+    flex: 1 1 45%;
+    margin-bottom: 5%;
+}
+.profile_pargraph h1{
+    color:rgb(236, 240, 46);
+    font-size: 60px;
+    font-weight: 700;
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.highlight{
+    color: black;
+}
+.profile_pargraph h2{
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+.profile_pargraph p{
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.picture{
+  max-width: 100vh;
+  height: auto;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: 0 0 15px white, 0 0 30px rgba(187, 123, 5, 0.808), 0 0 45px rgb(211, 214, 4);  
+}
+
+.btn {
+    background-color: rgb(211, 214, 4);
+    border: none;
+    color: white;
+    padding: 12px 30px; 
+    border-radius: 5px; 
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color0.3s, box-shadow 0.3s;
+    text-decoration: none; 
+    margin-top: 2%;
+  }
+  
+  .btn a {
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+  }
+  
+  .btn:hover {
+    background-color: #d97445;
+    box-shadow: 0 0 10px #29a1b1; 
+
+  }
+
+/*About ME*/
+#About_me{
+    height: 260vh;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.info_aboutme{
+    text-align: center; 
+    margin-top: 5%;
+    font-size: 30px;
+}
+.info_aboutme h1{
+    color:rgb(236, 240, 46);
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+.image{
+height: 500px;
+display: flex;
+padding: 30px;
+max-width: 100vh;
+border-radius: 10px;
+flex-wrap: wrap;
+border: 5px solid rgb(255, 255, 255);
+box-shadow: 0 0 15px white, 0 0 30px rgba(187, 123, 5, 0.808), 0 0 45px rgb(211, 214, 4);  
+    
+    
+}
+/*My family na part*/
+.img{
+    display:flex;
+    justify-content: space-between; 
+    margin-top: 5%;
+    
+}
+.img h1{ 
+ 
+    background-color: 30px;
+}
+.info{
+    max-width: 900px;
+    background-color: #081113;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.info h1{
+    color:rgb(236, 240, 46);
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin: 0;
+}
+.info p{
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+    color: white;
+}
+.video{
+height: 500px;
+width: 450px;
+padding: 30px;
+border-radius: 10px;
+flex-wrap: wrap;
+border: 5px solid rgb(255, 255, 255);
+box-shadow: 0 0 15px white, 0 0 30px rgba(187, 123, 5, 0.808), 0 0 45px rgb(211, 214, 4);
+}
+/*education na part*/
+#education-timeline {
+    height: 150vh;
+    position: relative;
+    max-width: 900px;
+    
+    margin: auto;
+    padding: 20px;
+    padding-top: 0 20%;
+  }
+  
+#education-timeline h1 {
+    text-align: center;
+    font-family: "Anton", serif;
+    color: rgb(236, 240, 46);
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  
+  .timeline-entry {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:#081113;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 50px;
+  }
+
+.timeline-entry:hover{
+     box-shadow: 0 10px 14px rgb(255, 255, 255);
+    transform: scale(1.24);
+}
+  
+  .timeline-entry.right {
+    float: right;
+    clear: both;
+  }
+  
+  .timeline-entry.left {
+    float: left;
+    clear: both;
+  }
+  
+  .timeline-entry .content h2 {
+    font-family: "Anton", serif;
+    font-size: 24px;
+    margin: 0;
+    color: #ecec2e;
+  }
+  
+  .timeline-entry .content p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .year {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    color: #bef00b;
+    font-size: 20px;
+  }
+  
+  .right .year {
+    right: -100px;
+  }
+  
+  .left .year {
+    left: -100px;
+  }
+  
+  #education-timeline::before {
+    content: "";
+    position: absolute;
+    margin-top: 10%;
+    top: 0;
+    left: 50%;
+    width: 5px;
+    height: 120vh;
+    background-color: #081113;
+    transform: translateX(-50%);
+  }
+  /*skills na part*/
+
+#skills_content{
+    height: 100vh;
+    padding: 15px 9%;
+    padding-bottom: 80px;
+
+}
+#skills_content h1{
+    text-align: center;
+    font-family: "Anton", serif;
+    color: rgb(236, 240, 46);
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+#skills_content .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap:15px
+}
+#skills_content .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0, 0,0.2);
+    border-radius: 5px;
+    background: #081113;
+    text-align: center;
+}
+
+#skills_content .box-container .box:hover{
+    box-shadow: 0 10px 14px rgb(255, 255, 255);
+    transform: scale(1.24);
+}
+
+#Contact_Me{
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+  }
+
+ 
+.call_contact {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+.apart_design h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    margin: 0;
+    color: rgb(236, 240, 46);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.contact_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.contact_info img {
+    height: 40px; 
+
+}
+
+
+
+
+.apart_design h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+.call_to_action h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    line-height: 1.6;
+    margin: 20px 0 0;
+    display: flex;
+}
+
+.contact_info a{
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: whitesmoke;
+}
+
+
+
+
+
+@media(max-width: 768px){
+    #skill_content{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile_pargraph h1 {
+      font-size: 1.5rem; 
+    }
+  
+    .profile_pargraph h2 {
+      font-size: 1.2rem; 
+    }
+    .profile_pargraph a{
+        font-size: 1.2rem;
+    }
+    .picture{
+        size-adjust:inherit;
+    }
+  }
+
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .logo {
+      font-size: 1.2rem;
+    }
+  
+    .navbar a {
+      font-size: 0.9rem;
+    }
+  }
+
+
+
+        
